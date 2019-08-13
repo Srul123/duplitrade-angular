@@ -9,7 +9,9 @@
 
 #2.  'cd duplitrade-client'
 
-#3. 'ng-serve --open'
+#3 'npm install'
+
+#4. 'ng-serve --open'
 
 
 # Open your browser at http://localhost:4200
