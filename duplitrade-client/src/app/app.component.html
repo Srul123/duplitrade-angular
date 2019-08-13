@@ -1,7 +1,13 @@
-<ng-container *ngIf="loaded">
+<ng-container *ngIf="loaded; else error">
     <app-header></app-header>
 
     <router-outlet></router-outlet>
 
     <app-footer></app-footer>
 </ng-container>
+
+<ng-template #error>
+    <div class="error-message" style="text-align: center;">
+        <p>{{ errorMessage }}</p>
+    </div>
+</ng-template>

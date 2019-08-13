@@ -24,7 +24,7 @@ export class StrategyProvidersComponent implements OnInit {
     b.net_pl = parseFloat(b.net_pl);
     b.net_profit = parseFloat(b.net_profit);
 
-    return parseInt(b.followers) - a.followers;
+    return b.followers - a.followers;
   }
 
   action() {

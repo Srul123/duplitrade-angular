@@ -8,6 +8,7 @@ import { AppDataService } from './services/app-data.service';
 })
 
 export class AppComponent implements OnInit {
+  errorMessage = '';
   loaded: boolean;
   constructor(private appDataService: AppDataService) { }
 
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
     }).catch(
       () => {
         console.log('Somthing went wrong )-: ');
+        this.errorMessage = 'Somthing went wrong )-: ';
         this.loaded = false;
       });
   }

@@ -1,16 +1,6 @@
 {
     "data": [
         {
-            "strategy": "Emerald",
-            "net_pl": "595.20",
-            "net_profit": "60,806.67",
-            "trades": "20558",
-            "win": "47.81",
-            "factor": "1.21",
-            "weeks": "456",
-            "followers": "509"
-        },
-        {
             "strategy": "Apollo",
             "net_pl": "-232.66",
             "net_profit": "60,806.67",
