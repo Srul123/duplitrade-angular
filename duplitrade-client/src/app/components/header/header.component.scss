@@ -8,7 +8,7 @@
      z-index: 6;
 
      .logo {
-         display: flex;
+         //  display: flex;
          justify-content: center;
          padding-top: 1rem;
 
@@ -80,12 +80,15 @@
                              left: 0;
                              top: -0.5rem;
 
+
                              a {
                                  img {
                                      height: 2rem;
                                  }
                              }
                          }
+
+
 
                          &:hover {
                              .nav-items {
@@ -270,5 +273,75 @@
                  }
              }
          }
+     }
+ }
+
+ .show-big-logo {
+     display: flex;
+ }
+
+ .hide-big-logo {
+     display: none;
+ }
+
+
+ .show-small-logo {
+     display: unset;
+     animation-name: open-left-to-right;
+     animation-duration: 1.5s;
+
+ }
+
+ .hide-small-logo {
+     display: none;
+ }
+
+ @keyframes show-small-logo {}
+
+ @keyframes hide-small-logo {
+     0% {
+         opacity: 0.9;
+     }
+
+     25% {
+         opacity: 0.75;
+     }
+
+     50% {
+         opacity: 0.5;
+     }
+
+     75% {
+         opacity: 0.25;
+
+     }
+
+     100% {
+         opacity: 0;
+         display: none;
+     }
+
+ }
+
+
+ @keyframes open-left-to-right {
+     0% {
+         opacity: 0.1;
+     }
+
+     25% {
+         opacity: 0.25;
+     }
+
+     50% {
+         opacity: 0.5;
+     }
+
+     75% {
+         opacity: 0.75;
+     }
+
+     100% {
+         opacity: 1;
      }
  }

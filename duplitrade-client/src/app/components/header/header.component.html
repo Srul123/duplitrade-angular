@@ -1,6 +1,9 @@
 <header class="header">
-  <div *ngIf="userScrolledBottom" id="logo" class="logo">
-    <a href="/">
+  <div  [ngClass]="{
+            'show-big-logo opacity-logo': userScrolledBottom,
+            'hide-big-logo': !userScrolledBottom
+          }" id="logo" class="logo">
+    <a [routerLink]="['/']">
       <img src="../assets/duplitrade_logo.png" alt="logo">
     </a>
   </div>
@@ -8,7 +11,10 @@
     <nav>
       <div>
         <ul>
-          <li *ngIf="!userScrolledBottom" id="toggle_logo">
+          <li id="toggle_logo" [ngClass]="{
+            'show-small-logo': !userScrolledBottom,
+            'hide-small-logo': userScrolledBottom
+          }" >
             <a href="">
               <img src="../assets/duplitrade_logo.png" alt="">
             </a>

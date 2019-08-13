@@ -5,13 +5,32 @@
      display: flex;
      justify-content: center;
 
+     @media (min-width: 500px) {
+         * {
+             font-size: 0.8rem;
+         }
+     }
+
+     @media (min-width: 830px) {
+         * {
+             font-size: 0.9rem;
+         }
+     }
+
+     // Large devices (desktops, 992px and up)
+     @media (min-width: 992px) {
+         * {
+             font-size: 1rem;
+         }
+     }
+
      .strategy-providers-cover {
          display: flex;
 
          table.table-data {
              cursor: default;
              border-collapse: collapse;
-
+             border: 0.5px;
              // text-align: left;
              // direction: ltr;
              width: 100%;
@@ -55,6 +74,11 @@
                  tr {
                      width: 100%;
 
+                     border-style: solid;
+                     border-color: rgb(187, 187, 187);
+                     border-spacing: 0;
+
+                     // border-bottom: 0.2px;
                      td {
                          white-space: nowrap;
                          padding-top: 1rem;
@@ -63,10 +87,8 @@
                          padding-left: 0.5rem;
                          margin: 0;
                          box-sizing: border-box;
-                         border: 1px solid transparent;
-                         border-style: solid;
-                         border-color: #535960;
-                         border-spacing: 0;
+                        // border: 1px solid transparent;
+
                          text-align: left;
                          color: rgb(51, 51, 51);
                          text-align: right;
