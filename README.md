@@ -9,7 +9,9 @@
 
 #2.  'cd duplitrade-client'
 
-#3. 'ng-serve --open'
+#3 'npm install'
+
+#4. 'ng-serve --open' (In case you didn't already installed Angular-cli you can download it by the 'npm i @angular/cli' command from your terminal
 
 
 # Open your browser at http://localhost:4200
