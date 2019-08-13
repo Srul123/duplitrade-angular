@@ -25,4 +25,18 @@ export class AppDataService {
       });
     });
   }
+
+  parseData() {
+    this.appData.data.forEach(element => {
+      element.followers = parseInt(element.followers);
+      element.win = parseFloat(element.win);
+      element.net_pl = parseFloat(element.net_pl);
+      element.net_profit = parseFloat(element.net_profit);
+      element.factor = parseFloat(element.factor);
+      element.trades = parseFloat(element.trades);
+      element.weeks = parseFloat(element.weeks);
+    });
+  }
+
+
 }

@@ -11,19 +11,10 @@ export class StrategyProvidersComponent implements OnInit {
   constructor(private appDataService: AppDataService) { }
 
   ngOnInit() {
-    this.tableData = this.appDataService.appData.data.sort(this.compareAndParse);
+    this.tableData = this.appDataService.appData.data.sort(this.compare);
   }
 
-  compareAndParse(a, b) {
-    a.followers = parseInt(a.followers);
-    a.win = parseFloat(a.win);
-    a.net_pl = parseFloat(a.net_pl);
-    a.net_profit = parseFloat(a.net_profit);
-    b.followers = parseInt(b.followers);
-    b.win = parseFloat(b.win);
-    b.net_pl = parseFloat(b.net_pl);
-    b.net_profit = parseFloat(b.net_profit);
-
+  compare(a, b) {
     return b.followers - a.followers;
   }
 

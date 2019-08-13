@@ -16,6 +16,8 @@ export class AppComponent implements OnInit {
     this.appDataService.appInit()
     .then((data) => {
       this.appDataService.appData = data;
+      this.appDataService.parseData();
+      console.log(this.appDataService.appData);
       this.loaded = true;
     }).catch(
       () => {

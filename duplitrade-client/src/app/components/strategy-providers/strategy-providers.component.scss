@@ -6,8 +6,10 @@
      justify-content: center;
 
      .strategy-providers-cover {
-        display: flex;
+         display: flex;
+
          table.table-data {
+             cursor: default;
              border-collapse: collapse;
 
              // text-align: left;
@@ -34,10 +36,19 @@
                          padding-bottom: 0.5rem;
                          text-align: left;
                          background-color: rgb(51, 51, 51);
-                         color: white;
 
+                         &:not(:first-child, :last-child) {
+                             border-top-color: transparent;
+                             border-right-color: rgb(149, 156, 163);
+                             border-bottom-color: rgb(149, 156, 163);
+                             border-left-color: rgb(87, 99, 111);
+                         }
                      }
+
+
+
                  }
+
              }
 
              tbody {
@@ -46,7 +57,10 @@
 
                      td {
                          white-space: nowrap;
-                         padding: 0.5rem;
+                         padding-top: 1rem;
+                         padding-bottom: 1rem;
+                         padding-right: 0.5rem;
+                         padding-left: 0.5rem;
                          margin: 0;
                          box-sizing: border-box;
                          border: 1px solid transparent;
@@ -55,22 +69,52 @@
                          border-spacing: 0;
                          text-align: left;
                          color: rgb(51, 51, 51);
+                         text-align: right;
 
-                         a.button.duplicate {
-                             cursor: pointer;
-                             background-color: rgb(16, 96, 255);
-                             color: white;
-                             margin: 0;
-                             position: relative;
-                             top: 50%;
-                             -ms-transform: translateY(-50%);
-                             transform: translateY(-50%);
+                         &:first-child {
+                             padding-left: 0.5rem;
+                             text-align: left;
 
-                             &:hover {
-                                 background-color: lightblue;
+                             a {
+                                 font-weight: 600;
+                                 text-decoration: none;
+                                 color: rgb(86, 140, 243);
+                                 margin-left: 0.3rem;
+                             }
+
+                             span {
+                                 i {
+                                     font-weight: 600;
+                                     color: rgb(86, 140, 243);
+                                 }
+                             }
+                         }
+
+                         &:nth-child(2) {
+                             font-weight: bold;
+                         }
+
+                         &:last-child {
+                             padding-left: 0.5rem;
+                             text-align: center;
+
+                             a.button.duplicate {
+                                 cursor: pointer;
+                                 background-color: rgb(16, 96, 255);
+                                 color: white;
+                                 margin: 0;
+                                 position: relative;
+                                 top: 50%;
+                                 -ms-transform: translateY(-50%);
+                                 transform: translateY(-50%);
+
+                                 &:hover {
+                                     background-color: cadetblue;
+                                 }
                              }
                          }
                      }
+
                  }
              }
          }
