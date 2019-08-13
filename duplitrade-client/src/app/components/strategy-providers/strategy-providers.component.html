@@ -1,0 +1,51 @@
+<div class="strategy-providers-container">
+  <div class="strategy-providers-cover">
+    <table class="table-data">
+      <thead>
+        <tr>
+          <th class="u-textCenter">Strategy</th>
+          <th>Net P/L %</th>
+          <th class="title">Net Profit</th>
+          <th class="title">Trades</th>
+          <th class="title">Win %</th>
+          <th class="title">Profit Factor</th>
+          <th class="title">Weeks</th>
+          <th class="title">Followers <i class="fal
+                fa-chevron-down"> </i></th>
+          <th class="title hide">&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of tableData">
+          <td>
+            <span></span> <a href="">{{item.strategy}}</a>   
+          </td>
+          <td [ngStyle]="{'color': item.net_pl >= 0 ? 'green' : 'black'}">
+            {{item.net_pl | percent}}
+          </td>
+          <td>
+            {{item.net_profit | currency}}
+          </td>
+          <td>
+            {{item.trades}}
+          </td>
+          <td>
+            {{item.win | percent}}
+          </td>
+          <td>
+            {{item.factor}}
+          </td>
+          <td>
+          {{item.weeks}}
+          </td>
+          <td>
+            {{item.followers}}
+          </td>
+          <td>
+            <a class="button duplicate" (click)="action()">Duplicate</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

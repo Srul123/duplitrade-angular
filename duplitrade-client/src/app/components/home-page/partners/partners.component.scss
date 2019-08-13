@@ -1,0 +1,60 @@
+ @import './src/styles/ui_components';
+
+ .partners-container {
+     background: #F2F2F2;
+
+     .partners-wrapper {
+         .OurPartners {
+             display: flex;
+             flex-direction: column;
+
+             .title {
+                 display: flex;
+                 justify-content: center;
+                 padding-top: 1rem;
+
+                 h2.OurPartners-title {
+                     color: #474747;
+                     margin-top: 0;
+                     font-weight: 400;
+                     padding-top: 1rem;
+                     padding-bottom: 2rem;
+                     font-size: 1.7rem;
+                 }
+             }
+
+             .collapse {
+                 .column {
+                     ul.OurPartners-logos {
+                         list-style: none;
+                         padding-left: 0;
+                         display: flex;
+                         justify-content: center;
+                         flex-wrap: wrap;
+                         margin: 0 20%;
+
+                         li.OurPartners-logos-item {
+                             margin: 1rem;
+
+                             img {}
+                         }
+                     }
+                 }
+             }
+
+             .container-button {
+                 padding-top: 2rem;
+                 padding-bottom: 1.5rem;
+
+                 .cover-button {
+                     display: flex;
+                     justify-content: center;
+
+                     a {
+                         font-size: 1.7rem;
+                     }
+                 }
+             }
+         }
+     }
+ }

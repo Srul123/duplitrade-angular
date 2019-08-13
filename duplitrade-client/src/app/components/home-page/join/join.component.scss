@@ -1,0 +1,170 @@
+.join-container {
+    box-sizing: border-box;
+    background: white;
+    position: relative;
+    padding: 1rem 1rem;
+    top: 0.4rem;
+
+    h2.title {
+        display: flex;
+        justify-content: center;
+        color: #343434;
+        font-size: 1.7rem;
+        font-weight: 400;
+        margin: 0.5rem 0;
+    }
+
+    .steps-cover {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        ul.steps {
+            //  padding: 0;
+            list-style: none;
+            display: flex;
+            position: relative;
+
+            @media (min-width: 100px) {
+                & {
+                    flex-direction: column;
+                    padding: 0 2%;
+                }
+            }
+
+            @media (min-width: 800px) {
+                & {
+                    flex-direction: unset;
+                    padding: 0 2%;
+                }
+            }
+
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+                & {
+                    padding: 0 10%;
+                }
+            }
+
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                & {
+                    padding: 0 17%;
+                }
+            }
+
+            @media (min-width: 1450px) {
+                & {
+                    padding: 0 20%;
+                }
+            }
+
+            @media (min-width: 1800px) {
+                & {
+                    padding: 0 30%;
+                }
+            }
+
+            li {
+                border-radius: 7px;
+                position: relative;
+                margin: 0.5rem;
+                background: #F2F2F2;
+                flex: 1;
+                min-width: 0%;
+
+
+                &:not(.step-1)::before {
+                    content: '';
+                    position: absolute;
+                    left: -1rem;
+                    top: calc(30%);
+                    height: 40%;
+                    width: 1rem;
+                    z-index: 5;
+                    background: #568cf3;
+                    display: block;
+                }
+
+                &.step-1 .HowItWorks-item-text {
+                    white-space: nowrap;
+                }
+
+                div.HowItWorks-item {
+
+                    .item-info {
+                        position: relative;
+                        z-index: 3;
+                        padding: 1rem 1rem;
+
+                        &>div {
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            position: relative;
+                        }
+
+
+                        .HowItWorks-item-number {
+                            padding-bottom: 0.5rem;
+
+                            span {
+                                width: 20%;
+                                border-radius: 50%;
+                                text-align: center;
+                                font-size: 1rem;
+                                padding: 10% 0;
+                                line-height: 0;
+                                position: relative;
+                                background: white;
+                                color: #568cf3;
+
+                            }
+                        }
+
+                        .HowItWorks-item-image {
+                            padding: 0.5rem 2rem;
+                        }
+
+                        .HowItWorks-item-text {
+                            padding: 1rem 0rem;
+                            text-align: center;
+                            color: #333;
+
+                        }
+
+                    }
+
+                    .HowItWorks-arrow-cover {
+                        position: absolute;
+                        z-index: 5;
+                        top: 3.8rem;
+                        width: 3rem;
+                        height: 8rem;
+                        overflow: hidden;
+                        transform: translate(0, 0) rotate(180deg);
+                        left: 0rem;
+                        top: calc(32%);
+
+                        .HowItWorks-arrow {
+                            background: #568cf3;
+                            position: absolute;
+                            width: 4rem;
+                            height: 6rem;
+                            left: 1rem;
+                            transform: translate(30px, 20px) rotate(45deg);
+                            border-radius: 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+* {
+    font: 300 14px 'Open Sans', sans-serif;
+    font-size: 1rem;
+}

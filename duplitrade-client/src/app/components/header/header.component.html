@@ -1,0 +1,185 @@
+<header class="header">
+  <div *ngIf="userScrolledBottom" id="logo" class="logo">
+    <a href="/">
+      <img src="../assets/duplitrade_logo.png" alt="logo">
+    </a>
+  </div>
+  <div class="navigator" [ngStyle]="{'padding-bottom': userScrolledBottom ? '1.5rem' : '0' }">
+    <nav>
+      <div>
+        <ul>
+          <li *ngIf="!userScrolledBottom" id="toggle_logo">
+            <a href="">
+              <img src="../assets/duplitrade_logo.png" alt="">
+            </a>
+          <li>
+            <a   [routerLink]="['/strategy-providers']">
+              Strategy Providers
+              <span class="navigation-dropdown-arrow">
+                <i class="fa fa-angle-down"></i>
+              </span>
+              <span class="transperent"></span>
+            </a>
+            <div class="nav-items">
+              <ul class="Navigation-item-children-list u-no-bullet">
+                <li class="Navigation-item-children-item">
+                  <a href="https://duplitrade.com/strategy-providers/"
+                    class="Navigation-item-children-item-link">Overview</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://duplitrade.com/strategy-providers/"
+                    class="Navigation-item-children-item-link">Apollo</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/strategy-providers/emerald"
+                    class="Navigation-item-children-item-link">Emerald</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/strategy-providers/legacy"
+                    class="Navigation-item-children-item-link">Legacy</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/strategy-providers/pearl"
+                    class="Navigation-item-children-item-link">Pearl</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/strategy-providers/radiant"
+                    class="Navigation-item-children-item-link">Radiant</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/strategy-providers/ruby"
+                    class="Navigation-item-children-item-link">Ruby</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a  [routerLink]="['/strategy-providers']">
+              Getting Started
+              <span class="navigation-dropdown-arrow">
+                <i class="fa fa-angle-down"></i>
+              </span>
+              <span class="transperent"></span>
+            </a>
+            <div class="nav-items">
+              <ul class="Navigation-item-children-list u-no-bullet">
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/how-it-works" class="Navigation-item-children-item-link">How Does
+                    It
+                    Work?</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/what-is-automated-trading"
+                    class="Navigation-item-children-item-link">What
+                    is Automated
+                    Trading?</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/faq/" class="Navigation-item-children-item-link">FAQ</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/guide/" class="Navigation-item-children-item-link">Strategy
+                    Providers
+                    Guide</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/glossary" class="Navigation-item-children-item-link">Glossary</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a  [routerLink]="['/strategy-providers']">
+              Simulator
+            </a>
+            <div class="nav-items">
+
+            </div>
+          </li>
+          <li>
+            <a  [routerLink]="['/strategy-providers']" >
+              Blog
+              <span class="navigation-dropdown-arrow">
+                <i class="fa fa-angle-down"></i>
+              </span>
+              <span class="transperent"></span>
+            </a>
+            <div class="nav-items">
+              <ul class="Navigation-item-children-list u-no-bullet">
+                <li class="Navigation-item-children-item">
+                  <a target="_blank" href="https://www.duplitrade.com/blog" class="Navigation-item-children-item-link"
+                    target="_blank">Home</a>
+
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/blog/tag/what-is/" target="_blank"
+                    class="Navigation-item-children-item-link" target="_blank">What
+                    Is</a>
+
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/blog/tag/tips/" target="_blank"
+                    class="Navigation-item-children-item-link" target="_blank">Tips</a>
+
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/blog/tag/advantages/" target="_blank"
+                    class="Navigation-item-children-item-link" target="_blank">Advantages</a>
+
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a  [routerLink]="['/strategy-providers']">
+              About
+              <span class="navigation-dropdown-arrow">
+                <i class="fa fa-angle-down"></i>
+              </span>
+              <span class="transperent"></span>
+            </a>
+            <div class="nav-items">
+              <ul class="Navigation-item-children-list u-no-bullet">
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/about-us/" class="Navigation-item-children-item-link">About Us</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/about-us/why-duplitrade"
+                    class="Navigation-item-children-item-link">Why
+                    DupliTrade</a>
+                </li>
+                <li class="Navigation-item-children-item">
+                  <a href="https://www.duplitrade.com/about-us/contact-us"
+                    class="Navigation-item-children-item-link">Contact
+                    Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="connect">
+          <div class="login-signup">
+            <div class="login">
+              <a class="button black-with-border_green" href="">Login</a>
+            </div>
+            <span class="line"></span>
+            <div class="signup">
+              <a class="button green" href="">Sign Up</a>
+            </div>
+          </div>
+          <div class="language">
+            <div class="cover-lang-items">
+              <a href="">
+                <img src="https://image.flaticon.com/icons/svg/551/551844.svg" alt="">
+                <span>
+                  <i class="fa fa-caret-down"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+</header>

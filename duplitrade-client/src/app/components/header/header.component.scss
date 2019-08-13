@@ -1,0 +1,274 @@
+ @import './src/styles/ui_components';
+
+ header {
+     background-color: rgb(51, 51, 51);
+     position: sticky;
+     top: 0;
+     width: 100%;
+     z-index: 6;
+
+     .logo {
+         display: flex;
+         justify-content: center;
+         padding-top: 1rem;
+
+         a {
+             img {
+                 height: 4rem;
+             }
+         }
+     }
+
+     .navigator {
+         background-color: rgb(51, 51, 51);
+         // padding-bottom: 1rem;
+         position: relative;
+         top: 0.6rem;
+
+         nav {
+             div {
+                 display: flex;
+
+                 @media (min-width: 100px) {
+                     & {
+                         display: flex;
+                     }
+                 }
+
+                 // Medium devices (tablets, 768px and up)
+                 @media (min-width: 800px) {
+                     & {
+                         display: flex;
+                     }
+                 }
+
+                 ul {
+                     flex: 1;
+                     justify-content: flex-end;
+                     display: flex;
+                     list-style: none;
+                     padding: 0;
+                     position: relative;
+                     margin-bottom: 0;
+                     margin-right: 2rem;
+                     margin-left: 1rem;
+
+                     @media (min-width: 100px) {
+                         & {
+                             justify-content: center;
+                         }
+                     }
+
+                     // Medium devices (tablets, 768px and up)
+                     @media (min-width: 800px) {
+                         & {
+                             justify-content: flex-end;
+                         }
+                     }
+
+
+
+                     li {
+                         margin-left: 0.5vw;
+                         margin-right: 0.5vw;
+                         padding-bottom: 0.5vh;
+                         position: relative;
+
+                         &#toggle_logo {
+                             position: relative;
+                             margin-right: 1rem;
+                             left: 0;
+                             top: -0.5rem;
+
+                             a {
+                                 img {
+                                     height: 2rem;
+                                 }
+                             }
+                         }
+
+                         &:hover {
+                             .nav-items {
+                                 display: block;
+                                 height: auto;
+                             }
+                         }
+
+                         a {
+                             text-decoration: none;
+                             color: #b0b0b0;
+                             white-space: nowrap;
+                             padding-top: 0.5rem;
+                             padding-bottom: 0.5rem;
+
+
+
+                             &:hover {
+                                 color: #fff;
+                             }
+
+                             span {
+                                 i {}
+                             }
+
+                             .transperent {
+                                 position: absolute;
+                                 width: 100%;
+                                 height: 100%;
+                                 left: 0;
+                                 padding-bottom: 2vh;
+                             }
+                         }
+
+                         .nav-items {
+                             box-shadow: 0 2px 9px -3px rgba(0, 0, 0, .6);
+                             border-radius: 2px;
+                             z-index: 20;
+                             // opacity: 0;
+                             display: none;
+                             position: absolute;
+                             top: 2rem;
+
+                             ul {
+                                 list-style: none;
+                                 display: flex;
+                                 flex-direction: column;
+                                 min-width: 3rem;
+                                 padding: 0.5rem;
+                                 margin: 0;
+                                 border-radius: 2px;
+                                 background-color: white;
+
+                                 &:before {
+                                     bottom: 100%;
+                                     left: 5%;
+                                     border: solid transparent;
+                                     content: " ";
+                                     height: 0;
+                                     width: 0;
+                                     top: -0.9rem;
+                                     position: absolute;
+                                     pointer-events: none;
+                                 }
+
+                                 &:before {
+                                     border-color: rgba(194, 225, 245, 0);
+                                     border-bottom-color: white;
+                                     border-width: 0.5rem;
+                                     margin-left: 0.5rem;
+                                 }
+
+                                 li {
+                                     margin-bottom: 1vh;
+                                     position: relative;
+
+                                     &:first-child {
+                                         padding-bottom: 0.5vh;
+                                         border-bottom: 1px dotted gray;
+
+                                         a {
+                                             border-bottom: 1px dotted white;
+                                             font-weight: 600;
+                                         }
+                                     }
+
+                                     a {
+                                         display: flex;
+                                         color: #4c4c4c;
+                                         width: 95%;
+                                         padding-right: 0.5vw;
+                                         padding-left: 0.5vw;
+                                     }
+
+                                     a:hover {
+                                         background-color: lightgray;
+                                         border-radius: 5px;
+                                     }
+
+
+
+                                 }
+                             }
+                         }
+                     }
+                 }
+
+                 .connect {
+                     flex: 1;
+                     display: flex;
+                     justify-content: center;
+                     position: relative;
+                     top: 0.5rem;
+                     white-space: nowrap;
+
+                     @media (min-width: 100px) {
+                         & {
+                             // display: none;
+
+                         }
+                     }
+
+                     @media (min-width: 800px) {
+                         & {
+                             display: flex;
+                         }
+                     }
+
+                     .login-signup {
+                         display: flex;
+                         align-items: flex-start;
+                         margin-right: 1rem;
+                         margin-top: 0.5rem;
+
+                         .login {}
+
+                         .line {
+                             margin-left: 1rem;
+                             margin-right: 1rem;
+                             border: 1px solid #b0b0b0;
+                             height: 1.2rem;
+                             position: relative;
+                             bottom: 0.2rem;
+
+                         }
+
+                         .signup {}
+                     }
+
+                     .language {
+                         width: 2.5rem;
+                         position: relative;
+
+                         .cover-lang-items {
+                             position: absolute;
+                             top: 0;
+
+                             a {
+                                 white-space: nowrap;
+                                 position: relative;
+
+                                 img {
+                                     height: 0.8rem;
+                                     transform: translate(50%, 50%);
+                                     position: relative;
+                                 }
+
+                                 span {
+                                     position: relative;
+                                     left: 0.8rem;
+                                     top: 0.3rem;
+
+                                     i {
+                                         font-size: 0.8rem;
+                                         color: lightgray;
+                                     }
+                                 }
+
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
