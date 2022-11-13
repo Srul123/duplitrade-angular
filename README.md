@@ -2,7 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/31043411/201534834-c913710e-6bcb-4044-bdd1-97a51db1e309.png)
 
-# Scrrenshot of home page
+# Screenshot of home page
 ![image](https://user-images.githubusercontent.com/31043411/201534877-64adcfde-0552-4279-9761-c40a3fd1efea.png)
 
 # How to run the project:
