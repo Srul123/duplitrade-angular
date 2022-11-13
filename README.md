@@ -15,7 +15,7 @@
 
 3 npm install
 
-4. ng-serve --open (In case you didn't already installed Angular-cli you can download it by the 'npm i @angular/cli' command from your terminal
+4. ng-serve --open 
 
 
 # Open your browser at http://localhost:4200
