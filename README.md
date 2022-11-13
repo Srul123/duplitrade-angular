@@ -1,4 +1,4 @@
-# duplitrade-angular
+# duplitrade-angular (cutom css)
 
 ![image](https://user-images.githubusercontent.com/31043411/201534834-c913710e-6bcb-4044-bdd1-97a51db1e309.png)
 
